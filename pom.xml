@@ -1,0 +1,67 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>de.tiq</groupId>
+	<artifactId>JdbcUtils</artifactId>
+	<version>0.0.2</version>
+	<name>JDBC Utilities</name>
+	<inceptionYear>2012</inceptionYear>
+	<description>A library that provides basic functionality to build a JDBC driver. 
+  			   The developer is supported with some default implementations for the JDBC interface.</description>
+	<organization>
+		<name>TIQ Solutions</name>
+		<url>www.tiq-solutions.com</url>
+	</organization>
+	<licenses>
+		<license>
+			<name>GNU General Public License, Version 2</name>
+			<url>http://www.gnu.org/licenses/gpl-2.0.html</url>
+			<distribution>manual</distribution>
+			<comments>For non-commercial usage only!</comments>
+		</license>
+		<license>
+			<name>TIQ-Solutions vendor license</name>
+			<distribution>manual</distribution>
+			<comments>Proprietary license, granted on demand!</comments>
+		</license>
+	</licenses>
+	<developers>
+		<developer>
+			<id>dblankenberg</id>
+			<name>Dirk Blankenberg</name>
+			<email>dblankenberg@tiq-solutions.de</email>
+			<organization>TIQ Solutions</organization>
+			<organizationUrl>www.tiq-solutions.com</organizationUrl>
+			<roles>
+				<role>architect</role>
+				<role>developer</role>
+			</roles>
+			<timezone>CET</timezone>
+		</developer>
+		<developer>
+			<id>dhaeberlein</id>
+			<name>Dan Häberlein</name>
+			<email>dhaeberlein@tiq-solutions.de</email>
+			<organization>TIQ Solutions</organization>
+			<organizationUrl>www.tiq-solutions.com</organizationUrl>
+			<roles>
+				<role>developer</role>
+			</roles>
+			<timezone>CET</timezone>
+		</developer>
+	</developers>
+	<build>
+		<finalName>${project.artifactId}</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.1</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+		</plugin>
+	</plugins>  		
+  </build>
+</project>
