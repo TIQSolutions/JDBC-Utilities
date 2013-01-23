@@ -20,7 +20,7 @@ If you are using maven, you can include this library in the dependency section o
 		<dependency>
 			<groupId>de.tiq</groupId>
 			<artifactId>JdbcUtils</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>0.0.2</version>
 		</dependency>	
 
 ## Developer info
