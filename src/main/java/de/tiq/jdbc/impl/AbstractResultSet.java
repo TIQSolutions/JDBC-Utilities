@@ -14,7 +14,7 @@
  * info@tiq-solutions.com
  * 
  */
-package de.tiq.jdbc.defaultimpl;
+package de.tiq.jdbc.impl;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
