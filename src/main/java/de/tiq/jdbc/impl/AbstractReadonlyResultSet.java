@@ -516,8 +516,6 @@ public abstract class AbstractReadonlyResultSet extends AbstractResultSet implem
 
 	@Override
 	public boolean wasNull() throws SQLException {
-		System.out.println("TIQ ResultSet.wasNull");
-		// TODO Auto-generated method stub
 		return false;
 	}
 }
