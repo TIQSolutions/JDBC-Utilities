@@ -18,6 +18,7 @@ package de.tiq.jdbc;
 
  import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 /**
  * Abstract class to define mandatory methods, processing the sql.</br> 
@@ -33,6 +34,7 @@ public abstract class QueryExecutor<T extends ConnectionHandler> {
 	protected int resultSetHoldability;
 
 	protected T conHandler;
+	protected Statement enclosingStatement;
 	
 	protected QueryExecutor(T conHandler){
 		this.conHandler = conHandler;	
@@ -52,6 +54,10 @@ public abstract class QueryExecutor<T extends ConnectionHandler> {
 	
 	public void setResultSetHoldability(int resultSetHoldability){
 		this.resultSetHoldability = resultSetHoldability;
+	}
+	
+	protected void setEnclosingStatement(Statement stmt){
+		this.enclosingStatement = stmt;
 	}
 	
 	public abstract void closeStatement();

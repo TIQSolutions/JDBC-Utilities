@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>de.tiq</groupId>
 	<artifactId>JdbcUtils</artifactId>
-	<version>0.1.1</version>
+	<version>0.1.2</version>
 	<name>JDBC Utilities</name>
 	<inceptionYear>2012</inceptionYear>
 	<description>A library that provides basic functionality to build a JDBC driver. 
