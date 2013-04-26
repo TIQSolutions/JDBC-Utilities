@@ -54,6 +54,8 @@ public abstract class QueryExecutor<T extends ConnectionHandler> {
 		this.resultSetHoldability = resultSetHoldability;
 	}
 	
+	public abstract void closeStatement();
+	
 	public abstract boolean execute(String sql) throws SQLException;
 	public abstract ResultSet getResultSet() throws SQLException;
 	
