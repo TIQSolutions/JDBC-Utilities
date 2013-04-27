@@ -45,6 +45,18 @@ import javax.sql.rowset.serial.SerialException;
 
 public abstract class AbstractResultSet implements ResultSet {
 
+	private boolean isClosed;
+
+	@Override
+	public void close() throws SQLException {
+		isClosed = true;
+	}
+	
+	@Override
+	public boolean isClosed() throws SQLException {
+		return isClosed;
+	}
+	
 	protected static class SerialNClob extends SerialClob implements NClob {
 		private static final long serialVersionUID = -6423673475979058904L;
 

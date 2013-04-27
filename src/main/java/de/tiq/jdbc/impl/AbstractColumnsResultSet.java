@@ -26,8 +26,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public abstract class AbstractColumnsResultSet extends
-		AbstractReadonlyResultSet {
+public abstract class AbstractColumnsResultSet extends AbstractReadonlyResultSet {
+	
 	private final List<ColumnDescription> tables = new ArrayList<ColumnDescription>();
 	private int tablesIdx = -1;
 

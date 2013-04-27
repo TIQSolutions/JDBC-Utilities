@@ -72,13 +72,6 @@ public abstract class AbstractReadonlyResultSet extends AbstractResultSet implem
 	}
 
 	@Override
-	public void close() throws SQLException {
-		System.out.println("TIQ ResultSet.close");
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
 	public void deleteRow() throws SQLException {
 		System.out.println("TIQ ResultSet.deleteRow");
 		// TODO Auto-generated method stub
@@ -165,13 +158,6 @@ public abstract class AbstractReadonlyResultSet extends AbstractResultSet implem
 	@Override
 	public boolean isBeforeFirst() throws SQLException {
 		System.out.println("TIQ ResultSet.isBeforeFirst");
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public boolean isClosed() throws SQLException {
-		System.out.println("TIQ ResultSet.isClosed");
 		// TODO Auto-generated method stub
 		return false;
 	}
@@ -518,4 +504,5 @@ public abstract class AbstractReadonlyResultSet extends AbstractResultSet implem
 	public boolean wasNull() throws SQLException {
 		return false;
 	}
+	
 }
